@@ -15,9 +15,9 @@
     [dateFormatter setDateFormat:format];
     NSDate *date = [dateFormatter dateFromString:self];
     
-    NSDateFormatter *targetFormatter = [NSDateFormatter alloc] init];
-    [formatter setDateFormat:targetFormat];
-    return [formatter stringFromDate:date];
+    NSDateFormatter *targetFormatter = [NSDateFormatter new];
+    [targetFormatter setDateFormat:targetFormat];
+    return [targetFormatter stringFromDate:date];
 }
 
 - (NSDate *)dateFromStringWithFormat:(NSString *)format
